@@ -40,16 +40,14 @@ public int getVitess_max() {
 public void setVitess_max(int vitess_max) {
 	this.vitess_max = vitess_max;
 }
-public void contenanceR() {
-	
-}
-public void contenueR() {
-	
-}
+
 public void  fairPlein(String type_carburant, int contenance,int contenu) {
+	if (contenu>80) {
 	type_carburant=type_carb;
 	contenuR=contenanceR;
 	contenu=contenance-(contenanceR-contenuR);
 System.out.println(" a fait le plein");
+}else {System.out.println(" ya pas suffisament dans reservoir");
+}	
 }
 }
